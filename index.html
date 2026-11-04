@@ -91,10 +91,11 @@ footer b{font:400 1.8rem "Instrument Serif",serif;display:block}footer a{color:v
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(max-width:400px){.gal{grid-template-columns:1fr}.nav{padding-inline:12px}.nav div{gap:8px}.nav a{font-size:12px}}
 button:disabled{opacity:.55} :focus-visible{outline:3px solid #8C6A49;outline-offset:4px}
+.nav-logo{display:block;width:150px;height:64px;object-fit:contain;mix-blend-mode:multiply}.nav{background:rgba(245,245,245,.97);padding-block:8px}.slide[hidden]{display:none}.carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px}.carousel-controls button{padding:8px 12px;background:var(--azul);color:white;border:0;border-radius:4px;cursor:pointer}.phase{display:block;font-weight:600;margin:8px 0}.media-selection{font-size:.85rem;overflow-wrap:anywhere}#admin form>p,#selection{grid-column:1/-1}@media(max-width:500px){.nav-logo{width:115px;height:54px}}
 </style>
-</head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"></head>
 <body>
-<nav class="nav" aria-label="Principal"><b>Serrano</b><div><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#taller">El taller</a><a href="#contacto" class="btn sm">Presupuesto gratis</a></div></nav>
+<nav class="nav" aria-label="Principal"><a href="#intro" aria-label="Serrano, inicio"><img class="nav-logo" src="/logo.jpg" alt="Serrano Carpintería y Ebanistería"></a><div><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#taller">El taller</a><a href="#contacto" class="btn sm">Presupuesto gratis</a></div></nav>
 
 <header id="intro" aria-label="Portada">
 <div class="stage" id="stage">
@@ -135,8 +136,8 @@ button:disabled{opacity:.55} :focus-visible{outline:3px solid #8C6A49;outline-of
   <form id="f" style="margin-top:20px">
    <label>Título<input id="ft" required maxlength="80" placeholder="Armario empotrado en Marchamalo"></label>
    <label>Tipo<select id="fc"><option>Armarios y vestidores</option><option>Cocinas</option><option>Puertas</option><option>Ventanas</option><option>Baños</option><option>Tarimas y rodapiés</option><option>Ebanistería</option></select></label>
-   <label>Descripción<input id="fd" maxlength="160" placeholder="Opcional"></label>
-   <label>Foto o vídeo<input id="ff" type="file" accept="image/jpeg,image/png,image/webp,video/mp4,video/webm" required></label>
+   <label>Descripción<textarea id="fd" maxlength="160" rows="3" placeholder="Explica el trabajo realizado"></textarea></label>
+   <label>Antes: fotos y vídeos<input id="before" type="file" multiple accept="image/jpeg,image/png,image/webp,video/mp4,video/webm"></label><label>Después: fotos y vídeos<input id="after" type="file" multiple accept="image/jpeg,image/png,image/webp,video/mp4,video/webm" required></label><p>Hasta 20 archivos en total, 50 MB por archivo y 200 MB por trabajo. Se mostrarán en el orden seleccionado, primero el antes y luego el después. JPG, PNG, WebP, MP4 o WebM.</p><div id="selection" aria-live="polite"></div>
    <button class="btn" id="fb">Publicar trabajo</button>
   </form>
   <p id="msg" role="status"></p>

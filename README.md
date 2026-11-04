@@ -54,3 +54,6 @@ Analítica prevista: Matomo opcional, sin cookies y con consentimiento previo a 
 Pruebas necesarias: en navegador limpio no debe haber peticiones a Matomo antes de decidir ni tras rechazar; después de aceptar solo con variables válidas; retirar debe detener la medición tras recarga. Revisar navegación por teclado, enlaces legales y vista móvil. La configuración real de proveedores sigue pendiente; los textos son un borrador para completar con los datos y operaciones definitivos.
 
 Referencias: https://www.aepd.es/guias/guia-cookies.pdf ; https://www.aepd.es/derechos-y-deberes/conoce-tus-derechos/derecho-de-informacion ; https://developer.matomo.org/guides/tracking-consent
+
+## Versión con carruseles Antes / Después
+Consulta GUIA-SUPABASE.md. Después del esquema inicial ejecuta también supabase/02-carruseles.sql, tanto en instalaciones nuevas como al actualizar una instalación antigua. El formulario ahora publica varios archivos en un único trabajo; conserva compatibilidad con los trabajos antiguos. El favicon SVG está en public/favicon.svg y el logo original aparece en la navegación superior.
