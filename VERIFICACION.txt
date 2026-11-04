@@ -1,0 +1,1 @@
+Actualización 04/11/2026: dependencias instaladas, npm run build superado (Vite 7.3.7), incluidas las tres páginas legales. Sintaxis de consentimiento y configuración correcta. Enlaces legales y eliminación de Google Fonts comprobados. Sin prueba visual de navegador ni conexión real a Supabase, Matomo o Vercel. Datos legales ficticios pendientes de sustituir.
