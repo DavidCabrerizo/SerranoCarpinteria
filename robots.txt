@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://serrano-carpinteria.vercel.app/sitemap.xml
